@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HelloWidget extends StatelessWidget {
   const HelloWidget({Key? key}) : super(key: key);
@@ -10,13 +11,18 @@ class HelloWidget extends StatelessWidget {
       constraints: const BoxConstraints.expand(),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          Text(
+        children: [
+          SvgPicture.asset(
+            'assets/37792018.svg',
+            height: 50.0,
+            width: 50.0,
+          ),
+          const Text(
             'Hello',
             style: TextStyle(color: Colors.black, fontSize: 40.0),
             textDirection: TextDirection.ltr,
           ),
-          Text(
+          const Text(
             'World!',
             style: TextStyle(
                 color: Colors.blue,
