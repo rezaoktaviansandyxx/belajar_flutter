@@ -13,7 +13,7 @@ class HelloWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SvgPicture.asset(
-            'assets/37792018.svg',
+            'assets/image2vector.svg',
             height: 50.0,
             width: 50.0,
           ),
