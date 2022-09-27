@@ -11,7 +11,8 @@ void main() {
   Container(
     color: Colors.white,
     child: Column(
-      children: [
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: const [
         Text(
           'Hello',
           style: TextStyle(color: Colors.black, fontSize: 40.0),
@@ -24,7 +25,6 @@ void main() {
           textDirection: TextDirection.ltr,
         ),
       ],
-      mainAxisAlignment: MainAxisAlignment.center,
     ),
   );
 }
